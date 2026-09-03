@@ -1,0 +1,10 @@
+[
+	{
+  		"keys": ["alt+x"], 
+  		"command": "toggle_markdown_task"
+	},
+	{
+ 		"keys": ["ctrl+shift+t"], 
+  		"command": "format_markdown_table"
+	}
+]

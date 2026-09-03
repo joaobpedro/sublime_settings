@@ -1,0 +1,32 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/contrast/freshcut-contrast.tmTheme",
+	"theme": "Adaptive.sublime-theme",
+	"font_face": "Iosevka NFM",
+	"highlight_modified_tabs": true,
+
+	"index_files": true,
+
+	// remember_workspace makes Sublime Text remember what workspace each window
+	// was in last. When set to false the OS left to determine which workspace
+	// a window is opened in. This doesn't work with Wayland.
+	"remember_workspace": false,
+
+	// remember_layout makes Sublime Text start with the same layout it closed
+	// with. Only applies when hot_exit is disabled.
+	"remember_layout": false,
+
+	"hot_exit": false,
+	"remember_open_files": false,
+	"caret_extra_width": 2,
+
+	"highlight_line": true,
+	"draw_minimap_border": true,
+	"sidebar_on_right": true,
+}
