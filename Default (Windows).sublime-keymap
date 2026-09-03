@@ -6,5 +6,25 @@
 	{
  		"keys": ["ctrl+shift+t"], 
   		"command": "format_markdown_table"
-	}
+	},
+	{
+        "keys": ["ctrl+up"],
+        "command": "jump_empty_space",
+        "args": {"forward": false, "extend": false}
+    },
+    {
+        "keys": ["ctrl+down"],
+        "command": "jump_empty_space",
+        "args": {"forward": true, "extend": false}
+    },
+    {
+        "keys": ["ctrl+shift+up"],
+        "command": "jump_empty_space",
+        "args": {"forward": false, "extend": true}
+    },
+    {
+        "keys": ["ctrl+shift+down"],
+        "command": "jump_empty_space",
+        "args": {"forward": true, "extend": true}
+    }
 ]
