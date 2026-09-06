@@ -1,6 +1,6 @@
 {
 	"shell_cmd": "build_win32.bat",
 	"working_dir": "${folder:${project_path:${file_path}}}",
-    "file_regex": "^([^(]+)\\((\\d+)\\):\\s+error\\s+[A-Z]\\d+:\\s+(.*)$",
+    "file_regex": "^(?:\\s*)([a-zA-Z]:[^\\(\\n]+)\\((\\d+)\\)\\s*:\\s*(?:(?:fatal\\s+)?error|warning)\\s+\\w+\\d+:\\s*()(.*)$",
     "selector": "*.c, *.c++"
 }
