@@ -30,4 +30,7 @@
 	"draw_minimap_border": true,
 	"sidebar_on_right": true,
 	"draw_white_space": [],
+
+	"draw_minimap_border": true,
+
 }
