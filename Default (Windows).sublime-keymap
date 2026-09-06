@@ -26,5 +26,13 @@
         "keys": ["ctrl+shift+down"],
         "command": "jump_empty_space",
         "args": {"forward": true, "extend": true}
-    }
+    },
+    { 
+        "keys": ["alt+up"], 
+        "command": "swap_line_up" 
+    },
+    { 
+        "keys": ["alt+down"], 
+        "command": "swap_line_down" 
+    },
 ]

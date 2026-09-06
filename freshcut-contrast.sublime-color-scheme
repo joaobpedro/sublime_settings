@@ -7,7 +7,7 @@
 	{
         "caret": "#00FF00",
         "line_highlight": "#0F235A",
-        "selection": "#0000FF"
+        // "selection": "#0000FF"
 	},
 	"rules":
 	[
