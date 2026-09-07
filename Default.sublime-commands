@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Find: List All TODOs",
+        "command": "list_todos"
+    }
+]

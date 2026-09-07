@@ -35,7 +35,7 @@
         "keys": ["alt+down"], 
         "command": "swap_line_down" 
     },
-    { "keys": ["tab"], "command": "indent" },
+    { "keys": ["alt+right"], "command": "indent" },
     { "keys": ["ctrl+k", "tab"], "command": "reindent", "args": {"single_line": true} },
-    { "keys": ["shift+tab"], "command": "unindent" },
+    { "keys": ["alt+left"], "command": "unindent" },
 ]
