@@ -37,5 +37,5 @@
 	"git_diff_target": "index",
 
 	// "mini_diff": true,
-	"mini_diff": false,
+	"mini_diff": true,
 }
