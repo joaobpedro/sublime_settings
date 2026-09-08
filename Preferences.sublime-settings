@@ -1,15 +1,15 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
-	"font_size": 12,
+	"font_size": 11,
 	"ignored_packages":
 	[
 		"Vintage",
 	],
 	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/contrast/freshcut-contrast.tmTheme",
 	"theme": "Adaptive.sublime-theme",
-	"font_face": "Noto Sans Mono",
-	"font_options": ["no_italic"],
+	"font_face": "JetBrainsMono NF",
+	"font_options": ["no_italic", "no_liga", "no_clig", "no_calt"],
 	// "font_face": "Consolas",
 	"highlight_modified_tabs": true,
 
@@ -30,12 +30,12 @@
 
 	"highlight_line": true,
 	"draw_minimap_border": true,
+	"always_show_minimap_viewport": true,
 	"sidebar_on_right": true,
 	"draw_white_space": [],
 	"show_git_status": false,
-	"git_diff_target": "working_dir",
+	"git_diff_target": "index",
 
-
-	/*"draw_minimap_border": true,*/
-
+	// "mini_diff": true,
+	"mini_diff": false,
 }
