@@ -35,6 +35,7 @@
 	"draw_white_space": [],
 	"show_git_status": false,
 	"git_diff_target": "index",
+	"indent_guide_options": ["draw_normal", "draw_active_single", "solid" ],
 
 	// "mini_diff": true,
 	"mini_diff": true,
