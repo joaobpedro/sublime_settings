@@ -2,5 +2,9 @@
     {
         "caption": "Find: List All TODOs",
         "command": "list_todos"
+    },
+    {
+        "caption": "Layout: Toggle Auto-Resizing Columns (70/30)",
+        "command": "toggle_auto_resize_columns"
     }
 ]
