@@ -1,0 +1,33 @@
+%YAML 1.2
+---
+# UFLEX2D Syntax Definition
+name: UFLEX2D
+file_extensions:
+  - 2if
+scope: source.uflex2d
+
+contexts:
+  main:
+    # Comments starting with a hash
+    - match: '#.*$'
+      scope: comment.line.number-sign.uflex2d
+
+    # Primary Control & Command Keywords
+    - match: '^\s*\b(HEAD|CONTROL|FRICMODEL|CONTA2D|VISRES|CROSS|GEOM|SMERGE|LMERGE|THICKWALL|CNTINTFIND|CONTINT|MATERIAL|GLBON|PRLOAD|GCLOAD|GPDISP|HIST)\b'
+      scope: keyword.control.uflex2d
+
+    # Secondary Keywords (Analysis types, Elements, Geometry modifiers)
+    - match: '\b(LINEAR|AUTO|CLOSED|CI|CO|SHELL|BEAM)\b'
+      scope: storage.type.uflex2d
+
+    # Visual Result Output Variables (e.g., sigma-xx, stra-friction)
+    - match: '\b(sigma-[a-z]+|stra-[a-z]+|curv-[a-z]+)\b'
+      scope: support.constant.uflex2d
+
+    # Numbers: Integers, Decimals, and Scientific Notation (e.g., 10E-5, -39.32)
+    - match: '(?<!\w)[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\b'
+      scope: constant.numeric.uflex2d
+
+    # Custom Identifiers, Materials, and Component Names (e.g., TUBE_3810_G, STEEL_SD)
+    - match: '\b[A-Za-z_][A-Za-z0-9_]*\b'
+      scope: variable.other.uflex2d
