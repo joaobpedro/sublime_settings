@@ -38,4 +38,8 @@
     { "keys": ["alt+right"], "command": "indent" },
     { "keys": ["ctrl+k", "tab"], "command": "reindent", "args": {"single_line": true} },
     { "keys": ["alt+left"], "command": "unindent" },
+    {
+    "keys": ["ctrl+shift+space"],
+    "command": "normalize_whitespace"
+    }
 ]

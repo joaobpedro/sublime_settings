@@ -6,9 +6,9 @@
 	[
 		"Vintage",
 	],
-	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/contrast/turnip-contrast.tmTheme",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/contrast/freshcut-contrast.tmTheme",
 	"theme": "Adaptive.sublime-theme",
-	"font_face": "JetBrainsMono NF Medium",
+	"font_face": "JetBrainsMono NF",
 	"font_options": ["no_italic", "no_liga", "no_clig", "no_calt"],
 	// "font_face": "Consolas",
 	"highlight_modified_tabs": true,
@@ -40,5 +40,5 @@
 	// "mini_diff": true,
 	"mini_diff": "auto",
 	"caret_style": "solid",
-	"auto_resize_columns_enabled": false,
+	"auto_resize_columns_enabled": true,
 }
