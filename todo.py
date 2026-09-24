@@ -25,7 +25,7 @@ class TodoHighlighterListener(sublime_plugin.EventListener):
                 "scope": "invalid"          # Usually renders bright red
             },
             "highlight_warning": {
-                "pattern": r"\b(HACK|HARDCODED|WARN)\b",
+                "pattern": r"\b(HACK|HARDCODED|WARNING)\b",
                 "scope": "markup.changed"   # Usually renders yellow/orange
             }
         }
