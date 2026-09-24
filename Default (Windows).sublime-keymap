@@ -39,7 +39,11 @@
     { "keys": ["ctrl+k", "tab"], "command": "reindent", "args": {"single_line": true} },
     { "keys": ["alt+left"], "command": "unindent" },
     {
-    "keys": ["ctrl+shift+space"],
-    "command": "normalize_whitespace"
+        "keys": ["ctrl+shift+space"],
+        "command": "normalize_whitespace"
+    },
+    {
+        "keys": ["alt+t"],
+        "command": "emacs_transpose_words"
     }
 ]
