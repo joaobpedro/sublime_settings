@@ -18,16 +18,11 @@ class MultiplyNumbersCommand(sublime_plugin.TextCommand):
             
             try:
                 num = float(text)
-                result = num * factor_val
                 
-                # Format cleanly: drop decimals if it results in a whole number
-                if result.is_integer():
-                    res_str = str(int(result))
-                else:
-                    # 'g' format removes trailing zeros and prevents floating point drift
-                    res_str = f"{result:g}"
-                    
-                self.view.replace(edit, region, res_str)
+                # Multiply, round to nearest whole number, and convert to integer
+                result = int(round(num * factor_val))
+                
+                self.view.replace(edit, region, str(result))
             except ValueError:
                 # Silently skip any cursors that highlighted text instead of numbers
                 pass
@@ -35,7 +30,7 @@ class MultiplyNumbersCommand(sublime_plugin.TextCommand):
 class PromptMultiplyNumbersCommand(sublime_plugin.WindowCommand):
     def run(self):
         self.window.show_input_panel(
-            "Multiply selected numbers by:", 
+            "Multiply selected numbers by (rounds to integer):", 
             "2", 
             self.on_done, 
             None, 
