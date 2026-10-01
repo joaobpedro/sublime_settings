@@ -26,7 +26,7 @@
 
 	"hot_exit": false,
 	"remember_open_files": false,
-	"caret_extra_width": 2,
+	"caret_extra_width": 3,
 
 	"highlight_line": true,
 	"draw_minimap_border": true,
@@ -40,5 +40,5 @@
 	// "mini_diff": true,
 	"mini_diff": "auto",
 	"caret_style": "solid",
-	"auto_resize_columns_enabled": true,
+	"auto_resize_columns_enabled": false,
 }
