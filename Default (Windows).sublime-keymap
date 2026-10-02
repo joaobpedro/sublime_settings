@@ -39,7 +39,7 @@
     { "keys": ["ctrl+k", "tab"], "command": "reindent", "args": {"single_line": true} },
     { "keys": ["alt+left"], "command": "unindent" },
     {
-        "keys": ["ctrl+shift+space"],
+        "keys": ["ctrl+shift+n"],
         "command": "normalize_whitespace"
     },
     {
@@ -49,5 +49,9 @@
     {
         "keys": ["ctrl+shift+="], 
         "command": "evaluate_math"
+    },
+    {
+        "keys": ["ctrl+shift+i"], 
+        "command": "prompt_insert_sequence"
     }
 ]

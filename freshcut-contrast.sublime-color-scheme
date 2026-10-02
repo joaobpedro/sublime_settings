@@ -8,9 +8,19 @@
         "caret": "#00FF00",
         "line_highlight": "#0F235A",
         // "selection": "#0000FF"
+        "guide": "#404040",
+        "active_guide": "#00FFFF",
+        
+        "brackets_options": "glow bold",
+        "bracket_contents_options": "glow foreground",
 	},
 	"rules":
 	[
-		
+		{
+            "name": "UFLEX2D Symbol Names",
+            "scope": "entity.name.class.uflex2d",
+            "foreground": "#FFFFFF", 
+            "font_style": "clear"
+        }
 	]
 }
