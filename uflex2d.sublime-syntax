@@ -8,26 +8,35 @@ scope: source.uflex2d
 
 contexts:
   main:
-    # Comments starting with a hash
+    # Comments
     - match: '#.*$'
       scope: comment.line.number-sign.uflex2d
 
+    # >>> NEW: GOTO SYMBOL INTEGRATION <<<
+    # Captures GEOM, MATERIAL, or CROSS, skips optional numbers, and tags the NAME
+    # as an 'entity.name.class' so Sublime Text automatically adds it to the @ menu.
+    - match: '^\s*\b(GEOM|MATERIAL|CROSS)\b\s+([0-9]+\s+)?([A-Za-z_][A-Za-z0-9_]*)'
+      captures:
+        1: keyword.control.uflex2d
+        2: constant.numeric.uflex2d
+        3: entity.name.class.uflex2d
+
     # Primary Control & Command Keywords
-    - match: '^\s*\b(HEAD|CONTROL|FRICMODEL|CONTA2D|VISRES|CROSS|GEOM|SMERGE|LMERGE|THICKWALL|CNTINTFIND|CONTINT|MATERIAL|GLBON|PRLOAD|GCLOAD|GPDISP|HIST)\b'
+    - match: '^\s*\b(HEAD|CONTROL|FRICMODEL|CONTA2D|VISRES|SMERGE|LMERGE|CMERGE|THICKWALL|CNTINTFIND|CONTINT|GLBON|PRLOAD|GCLOAD|GPDISP|HIST)\b'
       scope: keyword.control.uflex2d
 
-    # Secondary Keywords (Analysis types, Elements, Geometry modifiers)
+    # Secondary Keywords
     - match: '\b(LINEAR|AUTO|CLOSED|CI|CO|SHELL|BEAM)\b'
       scope: storage.type.uflex2d
 
-    # Visual Result Output Variables (e.g., sigma-xx, stra-friction)
+    # Visual Result Output Variables
     - match: '\b(sigma-[a-z]+|stra-[a-z]+|curv-[a-z]+)\b'
       scope: support.constant.uflex2d
 
-    # Numbers: Integers, Decimals, and Scientific Notation (e.g., 10E-5, -39.32)
+    # Numbers
     - match: '(?<!\w)[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\b'
       scope: constant.numeric.uflex2d
 
-    # Custom Identifiers, Materials, and Component Names (e.g., TUBE_3810_G, STEEL_SD)
+    # Custom Identifiers (Standard Variables)
     - match: '\b[A-Za-z_][A-Za-z0-9_]*\b'
       scope: variable.other.uflex2d
