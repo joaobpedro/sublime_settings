@@ -1,0 +1,29 @@
+{
+    "author": "SubMerge",
+    "globals": {},
+    "name": "SubMerge",
+    "rules": [
+        {
+            "foreground": "#7E8B8B",
+            "scope": "markup.folder.identical.submerge"
+        },
+        {
+            "foreground": "#8A7BC8",
+            "scope": "markup.folder.metadata.submerge"
+        },
+        {
+            "foreground": "#E69800",
+            "scope": "markup.folder.different.submerge"
+        },
+        {
+            "foreground": "#E5533D",
+            "scope": "markup.folder.unique.submerge"
+        },
+        {
+            "font_style": "bold",
+            "foreground": "#4A90D9",
+            "scope": "markup.folder.directory.submerge"
+        }
+    ],
+    "variables": {}
+}

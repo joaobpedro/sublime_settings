@@ -45,5 +45,9 @@
     {
         "keys": ["alt+t"],
         "command": "emacs_transpose_words"
+    },
+    {
+        "keys": ["ctrl+shift+="], 
+        "command": "evaluate_math"
     }
 ]
