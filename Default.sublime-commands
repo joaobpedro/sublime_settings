@@ -10,5 +10,9 @@
     {
         "caption": "Math: Multiply Selected Numbers",
         "command": "prompt_multiply_numbers"
+    },
+    {
+        "caption": "Organize Cpp files",
+        "command": "organize_cpp_panes"
     }
 ]

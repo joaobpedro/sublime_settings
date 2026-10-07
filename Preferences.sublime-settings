@@ -1,14 +1,14 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
-	"font_size": 11,
+	// "font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage",
 	],
 	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/contrast/freshcut-contrast.tmTheme",
 	"theme": "Adaptive.sublime-theme",
-	"font_face": "JetBrainsMono NF",
+	// "font_face": "JetBrainsMono NF",
 	"font_options": ["no_italic", "no_liga", "no_clig", "no_calt"],
 	// "font_face": "Consolas",
 	"highlight_modified_tabs": true,
@@ -41,4 +41,9 @@
 	"mini_diff": "auto",
 	"caret_style": "solid",
 	"auto_resize_columns_enabled": false,
+	"font_face": "Cascadia Code",
+	"font_size": 12,
+	"hardware_acceleration": "opengl",
+	"open_files_in_new_window": "always",
+
 }
