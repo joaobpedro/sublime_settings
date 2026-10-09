@@ -57,5 +57,9 @@
     { 
         "keys": ["ctrl+alt+s"], 
         "command": "swap_panes" 
+    },
+    { 
+        "keys": ["-"], 
+        "command": "triple_dash_separator" 
     }
 ]
