@@ -53,5 +53,9 @@
     {
         "keys": ["ctrl+shift+i"], 
         "command": "prompt_insert_sequence"
+    },
+    { 
+        "keys": ["ctrl+alt+s"], 
+        "command": "swap_panes" 
     }
 ]

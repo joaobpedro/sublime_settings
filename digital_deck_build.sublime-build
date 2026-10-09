@@ -2,5 +2,14 @@
 	"shell_cmd": "build_win32.bat",
 	"working_dir": "${folder:${project_path:${file_path}}}",
     "file_regex": "^(?:\\s*)([a-zA-Z]:[^\\(\\n]+)\\((\\d+)\\)\\s*:\\s*(?:(?:fatal\\s+)?error|warning)\\s+\\w+\\d+:\\s*()(.*)$",
-    "selector": "*.c, *.c++"
+    "selector": "*.c, *.c++",
+
+    "variants":
+	[
+		{
+			"name": "Run",
+			"shell_cmd": "${file_path}/Debug/digital_deck.exe",
+			"interactive": true,
+		}
+	]
 }
